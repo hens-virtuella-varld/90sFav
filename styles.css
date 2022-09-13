@@ -73,3 +73,17 @@ footer {
     text-align: center;
     border-style: dashed double none;
 }
+
+
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    width: 50%;
+    height: 20px;
+    padding: 2px;
+}
