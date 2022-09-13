@@ -1,6 +1,6 @@
 body {
     background-image: url('images/background.jpeg');
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
@@ -8,7 +8,7 @@ body {
 }
 
 .wrapper {
-    width: 700px;
+    width: 80%;
     margin: 0 auto;
     background-color: rgba(99, 11, 208, 0.4);;
     padding: 10px;
@@ -19,7 +19,8 @@ body {
 }
 
 .image-hover img {
-    width: 300px;
+    /* width: 300px; */
+    width: 80%;
     opacity: 0;
 }
 
@@ -28,16 +29,10 @@ body {
 }
 
 
-
-#grad {
-    height: 200px;
-    /* background-color: red; For browsers that do not support gradients */
-    background-image: linear-gradient(140deg, #d167b0 0%, #d6ca41 75%, #EADEDB 100%);
-}
-
-h1 span{
+h1 {
     font-family: 'Orbitron', sans-serif;
-    background-color:  rgba(239, 55, 55, 0.7);
+    padding: 10px;
+    background-image: linear-gradient(140deg, #d167b0 0%, #d6ca41 75%, #EADEDB 100%);
 }
 
 nav {
@@ -49,12 +44,17 @@ nav {
 section {
     background-color: rgba(117, 108, 113, 0.4);
     font-family: 'Josefin Sans', sans-serif;
-    
+    padding: 5px 10px;
+}
+
+section ul {
+    width: 80%;
 }
 
 
 h2 {
     font-family: 'Righteous', cursive;
+    padding: 5px;
     text-align: center;
     background-color:  rgba(201, 201, 22, 0.7);
 }
@@ -75,15 +75,18 @@ footer {
 }
 
 
-
 nav ul{
     list-style-type: none;
-    padding: 0;
+    padding: 5px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav li {
-    width: 50%;
-    height: 20px;
-    padding: 2px;
+
+
+@media (min-width: 900px) {
+    .wrapper {
+            width: 750px;
+        }
 }
