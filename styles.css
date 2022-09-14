@@ -28,6 +28,10 @@ body {
     opacity: 1;
 }
 
+header {
+    position: sticky;
+    top: 0;
+}
 
 h1 {
     font-family: 'Orbitron', sans-serif;
@@ -73,7 +77,6 @@ footer {
     text-align: center;
     border-style: dashed double none;
 }
-
 
 nav ul{
     list-style-type: none;
