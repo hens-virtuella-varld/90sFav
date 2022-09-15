@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
-    
+    background-attachment: fixed;
 }
 
 .wrapper {
