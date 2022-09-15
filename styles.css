@@ -19,7 +19,6 @@ body {
 }
 
 .image-hover img {
-    /* width: 300px; */
     width: 80%;
     opacity: 0;
 }
@@ -88,7 +87,7 @@ nav ul{
 
 
 
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
     .wrapper {
             width: 750px;
         }
