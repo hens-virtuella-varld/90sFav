@@ -1,17 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Josefin+Sans:wght@700&family=Orbitron:wght@900&family=Righteous&family=Roboto:wght@300&family=Sofadi+One&display=swap');
+/* Better to have it when a project just starts so it's not complicated to design a webpage.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
 body {
     background-image: url('images/background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #fff;
     background-attachment: fixed;
+    color: #fff;
+    font-family: 'Fontdiner Swanky', 'Josefin Sans', 'Orbitron', 'Righteous', 'Roboto', 'Sofadi One',  cursive, sans-serif;
 }
 
 .wrapper {
     width: 80%;
     margin: 0 auto;
-    background-color: rgba(99, 11, 208, 0.4);;
     padding: 10px;
+    background-color: rgba(99, 11, 208, 0.4);;
 }
 
 .image-hover {
@@ -38,22 +47,28 @@ h1 {
     background-image: linear-gradient(140deg, #d167b0 0%, #d6ca41 75%, #EADEDB 100%);
 }
 
-nav {
+.ref-list {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-section {
+.ref-list a {
+    text-decoration: none;
+    color: #444;
+    transition: all 0.5s ease-in-out;
+
+}   
+.ref-list a:hover {
+    color: white;
+    
+}
+
+.info-section {
     background-color: rgba(117, 108, 113, 0.4);
     font-family: 'Josefin Sans', sans-serif;
     padding: 5px 10px;
 }
-
-section ul {
-    width: 80%;
-}
-
 
 h2 {
     font-family: 'Righteous', cursive;
@@ -71,13 +86,9 @@ mark {
     color: white;
 }
 
-footer {
-    font-family: 'Fontdiner Swanky', cursive;
-    text-align: center;
-    border-style: dashed double none;
-}
 
-nav ul{
+
+.ref-list ul{
     list-style-type: none;
     padding: 5px;
     display: flex;
@@ -85,10 +96,20 @@ nav ul{
     align-items: center;
 }
 
+.ref-list ul li {
+    list-style: none;
+}
+
+footer {
+    font-family: 'Fontdiner Swanky', cursive;
+    text-align: center;
+    border-style: dashed double none;
+}
 
 
 @media screen and (min-width: 900px) {
     .wrapper {
             width: 750px;
         }
+        
 }
