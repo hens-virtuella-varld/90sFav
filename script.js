@@ -1,11 +1,22 @@
-let content = document.getElementById('content');
+const content = document.getElementById('content');
 
 function appendChildElement() {
-    let childElement = document.createElement('div');
+    const childElement = document.createElement('div');
     childElement.innerHTML = "I'm example code"
     content.appendChild(childElement);
 }
 
+function clickBox() {
+    const box = document.getElementById('box');
+    box.classList.toggle('box-active');
+}
 
-let button = document.getElementById('button1');
+
+const box = document.getElementById('box');
+box.addEventListener('click', clickBox)
+
+const button = document.getElementById('button1');
 button.addEventListener('click', appendChildElement);
+
+
+

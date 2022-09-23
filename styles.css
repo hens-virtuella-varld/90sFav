@@ -113,3 +113,21 @@ footer {
         }
         
 }
+
+#button1:hover {
+    background-color: salmon;
+    transition: background-color 1s;
+}
+
+.box {
+    background-color: salmon;
+    width: 10rem;
+    height: 10rem;
+}
+
+.box-active {
+    background-color: gray;
+    width: 20rem;
+    height: 10rem;
+    /* display: inline-block; */
+}
